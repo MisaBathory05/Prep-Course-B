@@ -6,15 +6,15 @@
 
 function devolverString(str) {
     // "Return" la string provista: str
-    // Tu código: 
-  return str
+    // Tu código:
+    return str
   }
   
   function suma(x, y) {
     // "x" e "y" son números
     // Suma "x" e "y" juntos y devuelve el valor
     // Tu código:
-  return x + y
+    return x + y
   }
   
   function resta(x, y) {
@@ -32,28 +32,27 @@ function devolverString(str) {
   function divide(x, y) {
     // Divide "x" entre "y" y devuelve el valor
     // Tu código:
-  return x / y
+    return x / y
   }
   
   function sonIguales(x, y) {
     // Devuelve "true" si "x" e "y" son iguales
     // De lo contrario, devuelve "false"
     // Tu código:
-   if (x == y) { 
-    return true
-   }else {
-    return false
-   }
-   
+    if (x === y) { 
+      return true
+     }else {
+      return false
+     }
   }
   
   function tienenMismaLongitud(str1, str2) {
     // Devuelve "true" si las dos strings tienen la misma longitud
     // De lo contrario, devuelve "false"
-    // Tu código: 
-    if (str1.length == str2.length) return true
+    // Tu código:
+    if (str1.length === str2.length) return true
     else return false
-    }
+  }
   
   function menosQueNoventa(num) {
     // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -88,7 +87,7 @@ function devolverString(str) {
   function esImpar(num) {
     // Devuelve "true" si "num" es impar
     // De lo contrario, devuelve "false"
-    // Tu código:) 
+    // Tu código:
     if ( num % 2 !== 0) return true
     else return false
   }
@@ -123,27 +122,21 @@ function devolverString(str) {
     // Tu código:
     return Math.ceil(num)
   }
-  
   function numeroRandom() {
     //Generar un número al azar entre 0 y 1 y devolverlo
     //Pista: investigá qué hace el método Math.random()
     // Tu código:
-    return Math.random
+    return Math.random()
   }
   
-  function esPositivo(numero){
+  function esPositivo(numero) {
     //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo.
     //Si el número es positivo, devolver ---> "Es positivo"
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false
     // Tu código:
-    if(numero > 0){
-      return "Es positivo"
-    }else if(numero < 0){
-        return "Es negativo"
-      }else
-        return false
-       }
+    if (numero === 0) {return false} else if (numero > 0) {return 'Es positivo'} else {return 'Es negativo'}
+  }
   
   function agregarSimboloExclamacion(str) {
     // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
